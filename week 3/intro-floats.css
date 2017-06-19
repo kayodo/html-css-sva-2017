@@ -8,7 +8,6 @@ html {
 
 .container {
   width: 800px;
-  display: block;
   margin: 0 auto;
 }
 
@@ -23,6 +22,10 @@ header h1 {
   text-shadow: 0 1px 1px black;
 }
 
+h2 {
+  color:#cc00ff
+}
+
 article {
   background-color: #fff;
   padding: 1em;
@@ -31,4 +34,44 @@ article {
 p {
   margin: 1em 0;
   line-height: 1.5em;
+}
+
+.photo {
+  margin: 0;
+  border: 10px solid #efefef;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.photo.left {
+  float: left;
+  margin-right: 2em;
+}
+
+.photo.right {
+  float: right;
+  margin-left: 2em;
+}
+
+.photo > img {
+  display: block;
+}
+
+@media screen and (min-width:1000px) {
+  .photo.right.break-layout {
+    margin-right: -80px;
+    margin-top: -2em;
+    margin-left: 0;
+    border: none;
+    background-color: #ffffff;
+    padding: 2em;
+  }
+  .photo.left.break-layout {
+    margin-left: -80px;
+    margin-top: -1em;
+    margin-right: 0;
+    border: none;
+    background-color: #ffffff;
+    padding: 2em;
+  }
 }
