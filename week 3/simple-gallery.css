@@ -24,10 +24,39 @@ header h1 {
   text-shadow: 0 1px 1px black;
 }
 
-article {  
+h2 {
+  color:#999999;
+}
+
+article {
   padding: 1em 0 1em 1em;
+}
+
+.gallery {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.gallery::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery li {
+  border: 2px solid #efefef;
+  margin: 0 1em 1em 0;
+  float: left;
+}
+
+.gallery img {
+  display: block;
 }
 
 footer {
   padding: 1em;
+  color: #444444;
+  background-color: black;
 }

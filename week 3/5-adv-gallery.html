@@ -5,6 +5,11 @@
   <title>Adv Gallery</title>
 <style>
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font: 100% arial;
   font-family: 'Droid Sans', sans-serif;
@@ -39,6 +44,7 @@ section {
   border: 1px solid gray;
   padding: 1em;
   margin-bottom: 1em;
+  display: flex;
 }
 
 section h2 {
@@ -61,6 +67,32 @@ section button {
   background-color: #c0f;
   margin-top: 1em;
 }
+
+/*Make the flex-grow be 0, the flex shrink be 0, and set it to a width of 220*/
+.photo {
+  flex: 0 0 220px;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.info p {
+  margin: .2em 0;
+}
+
+button {
+  border: none;
+  border-radius: 3em;
+}
+
+
+.info .info--content {
+  padding:0;
+}
+
 </style>
 </head>
 <body>
@@ -68,7 +100,7 @@ section button {
     <header>
       <h1>Photo Gallery</h1>
     </header>
-    <article>
+    <article class="info--content">
       <section>
         <div class="photo"><img src="http://www.placehold.it/200/ccff00" alt=""></div>
         <div class="info">
@@ -89,6 +121,6 @@ section button {
       </section>
     </article>
   </div>
-  
+
 </body>
 </html>
