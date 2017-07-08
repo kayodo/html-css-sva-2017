@@ -1,0 +1,32 @@
+body {
+	font: 12px arial;
+	margin: 0;
+	background-color: #BDC3C7;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+.header, .footer {
+	background-color: #D35400;
+	padding: 20px;
+}
+
+.main {
+	background-color: #ffffff;
+}
+
+.main p {
+	margin: 10px 0;
+}
+
+.secondary {
+	background-color: #2C3E50;
+}
+
+.secondary p {
+	font-size: 15px;
+	color: #ffffff;
+	margin: 10px 0;
+}
