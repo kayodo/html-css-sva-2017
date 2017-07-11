@@ -1,0 +1,63 @@
+body {
+  background-color: #efefef;
+  font: 16px arial;
+  color: #333333;
+  background: url(images/grand-canyon.jpg) no-repeat fixed center;
+  background-size: cover;
+}
+
+.wrapper {
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, .8);
+  padding: 1em;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0,0,0,.5);
+}
+
+.bg-example {
+  border: 1px hotpink solid;
+  height: 400px;
+  background-color: pink;
+  background-image: url(images/tile-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+
+
+.multi-bg {
+  margin: 1em auto;
+  width: 550px;
+  height: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,.3);
+  background:
+    url(images/sheep.png) no-repeat 95% 95%,
+    url(images/sky.png)
+    ;
+  transition: all 5s;
+}
+
+.multi-bg:hover {
+  background-position: 10% 90%, 100px 0;
+  ;
+}
+
+ul li {
+  list-style-image: url(images/heart.png);
+}
+
+li a {
+  background: url(images/pdf.jpg) no-repeat right center;
+  padding-right: 20px;
+  color: red;
+  text-decoration: none;
+}
+
+.logo {
+  width: 200px;
+  height: 60px;
+  display: inline-block; /*because an inline element cannot have a height and width*/
+  background: url(images/sva1.png);
+  text-indent: -999em;
+  vertical-align: middle;
+}

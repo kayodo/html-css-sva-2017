@@ -31,7 +31,6 @@ code {
 
 *::after {
   font: bold 1em monospace;
-  position: relative;
   color: rebeccapurple;
   white-space: no-wrap;
   display: block;
@@ -53,7 +52,7 @@ code {
   content: "{ position: fixed; }";
 }
 
-p[class] {
+p[class] /* any p that has an attribute of 'class'. any easy way to talk to all the position styles*/ {
   border: 1px solid rebeccapurple;
   padding: 1em;
 }
@@ -65,3 +64,56 @@ p {
 p + div {
   background-color: lightgray;
 }
+
+.static /*basically igores any positioning*/ {
+  position: static;
+  top: 30px;
+}
+
+.relative /*pulls it out of the flow, but also maintains staic position*/{
+  position: relative;
+  top: 10px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+article {
+  background-color: #bada55;
+}
+
+.nested {
+  height: 400px;
+  background-color: #bada55;
+  position: relative;
+}
+
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  left: 100px;
+  margin: 0;
+  z-index: 10; /*this is how modal windows are made*/
+}
+
+
+.fixed /*fixed to the viewport*/ {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 0;
+}
+
+/*
+.overlay /*a poorman's modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5)
+}
+*/
