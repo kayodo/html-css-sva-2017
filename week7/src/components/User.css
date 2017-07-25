@@ -1,0 +1,40 @@
+.User {
+  border: solid 1px #000000;
+  background-color: lightskyblue;
+  padding: 2em;
+  margin: 1em 2em;
+  text-align: left;
+}
+
+.User ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.User h2 {
+  font-weight: 100;
+  color: darkblue;
+  letter-spacing: 0;
+}
+
+.username {
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.User blockquote {
+  margin: 0;
+  padding: 1em;
+  border: 3px solid blue;
+  background-color: rgba(255, 255, 255, .3);
+  border-radius: 3px;
+}
+
+.User blockquote p {
+  margin: 0;
+}
+
+.User small::before {
+  content: "-- "
+}
